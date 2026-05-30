@@ -1,0 +1,18 @@
+data:
+  datapath: './data/truss/4x4spacetruss_load_v2.mat'
+
+model:
+  fc_dim: 256
+  N_layer: 3
+  n_head: 1
+
+train:
+  epochs: 200
+  coor_sampling_size: 500
+  num_train_input: 20000
+  batchsize: 20
+  coor_sampling_freq: 1
+  base_lr: 0.0001
+  visual_freq: 20
+  weight_bc: 500
+  weight_pde: 1

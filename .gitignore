@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+.vscode/
+.idea/
+.DS_Store
+
+.venv/
+logs/
+wandb/
+
+# Ignore generated plots, but keep folder with .gitkeep if needed
+res/plots/*
+!res/plots/.gitkeep
+
+# Ignore extra checkpoints by default
+res/saved_models/*
+!res/saved_models/best_model_planeframe_AGNO.pkl
+!res/saved_models/best_model_planetruss_AGNO.pkl
+!res/saved_models/best_model_spaceframe_AGNO.pkl
+!res/saved_models/best_model_spacetruss_AGNO.pkl
+
+# Do NOT ignore data/*.mat if they are part of the release

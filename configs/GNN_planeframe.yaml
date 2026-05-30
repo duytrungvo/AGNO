@@ -1,0 +1,23 @@
+data:
+  datapath: './data/frame/craneplaneGframe_9nodes_v2.mat'
+
+model:
+  in_dim: 3
+  fc_dim: 64
+  N_layer: 6
+  out_dim: 3
+  edge_dim: 3
+  dropout: 0.05
+  act: gelu
+
+train:
+  epochs: 200
+  num_train: 10000
+  num_val: 2000
+  num_test: 2000
+  patience: 100
+  batchsize: 20
+  base_lr: 0.001
+  visual_freq: 20
+  milestones: [100, 200, 300, 400, 500, 600, 700, 800, 900]
+  scheduler_gamma: 0.5
